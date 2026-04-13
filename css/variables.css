@@ -1,0 +1,21 @@
+/* FONTS */
+:root {
+  /* Font-related Variables */
+  font-size: 16px;
+  --body-font: "ABeeZee", sans-serif;
+  --scribble-font: "Caveat", cursive;
+
+  /* Padding & Margin */
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 8rem;
+
+  /* Colors */
+  --color-primary: #DEC7EB;
+  --color-secondary: #EE96D6;
+  --color-bg-primary: #131609;
+  --color-bg-secondary: #102009;
+}

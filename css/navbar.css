@@ -1,0 +1,26 @@
+#navbar {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+#navbar .nav-links {
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-m);
+  justify-content: center;
+}
+
+#navbar .page-links, #navbar .social-links {
+  display: flex;
+  gap: var(--spacing-m);
+}
+
+#navbar .logo {
+  width: 4rem;
+  fill: currentColor;
+}
