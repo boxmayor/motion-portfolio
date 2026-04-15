@@ -70,3 +70,8 @@
   font-style: normal;
   font-size: 2rem;
 }
+
+/* MAIN CSS RULES */
+main {
+  margin-top: 10rem;
+}
