@@ -6,21 +6,40 @@
   justify-content: center;
   align-items: center;
   gap: 0;
+  color: var(--color-primary);
+  background: var(--color-bg-primary);
+  position: fixed;
+  top: 0;
 }
 
-#navbar .nav-links {
+.nav-links {
   width: 100%;
   display: flex;
   gap: var(--spacing-m);
   justify-content: center;
 }
 
-#navbar .page-links, #navbar .social-links {
+.page-links, .social-links {
   display: flex;
   gap: var(--spacing-m);
+  color: var(--color-secondary);
+}
+
+.social-links svg {
+  width: 2rem;
+  height: auto;
+}
+
+:is(.page-links, .social-links) a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+:is(.page-links, .social-links) a:hover {
+  color: var(--color-primary);
 }
 
 #navbar .logo {
   width: 4rem;
-  fill: currentColor;
+  color: var(--color-primary);
 }
