@@ -68,12 +68,16 @@
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 /* RULES FOR GENERAL ELEMENTS */
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg-primary);
 }
 
 main {
@@ -84,6 +88,7 @@ main {
 .scroll-guide {
   width: 3rem;
   height: auto;
+  margin: 0 auto;
 }
 
 
@@ -142,6 +147,42 @@ main {
 
 #reel {
   scroll-margin-top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
+  background: var(--color-bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: var(--spacing-xl) 0;
+}
+
+.reel-container {
+  width: 100%;
+  height: auto;
+}
+
+.reel-container h2 {
+  text-align: center;
+  margin: var(--spacing-m) 0;
+  color: var(--color-secondary);
+}
+
+.reel-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+#reel .scroll-guide {
+  color: var(--color-secondary);
+}
+
+#reel .scroll-guide a {
+  color: var(--color-secondary);
+}
+
+#reel .scroll-guide a:hover {
+  color: var(--color-primary);
 }
 
 
@@ -150,3 +191,5 @@ main {
 #portfolio {
   scroll-margin-top: var(--navbar-height);
 }
+
+/* FOOTER */
