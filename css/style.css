@@ -71,7 +71,82 @@
   font-size: 2rem;
 }
 
-/* MAIN CSS RULES */
+/* RULES FOR GENERAL ELEMENTS */
+* {
+  box-sizing: border-box;
+}
+
 main {
-  margin-top: 10rem;
+  margin-top: var(--navbar-height);
+}
+
+/* RULES FOR RECURRING ELEMENTS */
+.scroll-guide {
+  width: 3rem;
+  height: auto;
+}
+
+
+/* WELCOME SECTION */
+#welcome {
+  scroll-margin-top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
+  width: 70%;
+  max-width: 600px;
+  padding: var(--spacing-xl) 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text{
+  text-align: center;
+} 
+
+.welcome-text h1 {
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.welcome-subheading {
+  color: var(--color-secondary);
+}
+
+.welcome-subheading p {
+  margin: 0;
+}
+
+.welcome-subheading p:first-of-type {
+  margin-top: var(--spacing-s);
+}
+
+.welcome-subheading p:nth-of-type(2) {
+  margin-top: var(--spacing-xs);
+}
+
+#welcome .scroll-guide {
+  color: var(--color-primary);
+}
+
+#welcome .scroll-guide a {
+  color: var(--color-primary);
+}
+
+#welcome .scroll-guide a:hover {
+  color: var(--color-secondary);
+}
+
+/* REEL SECTION */
+
+#reel {
+  scroll-margin-top: var(--navbar-height);
+}
+
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+  scroll-margin-top: var(--navbar-height);
 }

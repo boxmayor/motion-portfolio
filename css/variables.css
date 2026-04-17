@@ -18,4 +18,7 @@
   --color-secondary: #EE96D6;
   --color-bg-primary: #131609;
   --color-bg-secondary: #102009;
+
+  /* Navbar */
+  --navbar-height: 10rem;
 }
