@@ -76,6 +76,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 2px solid var(--color-secondary);
+  border-radius: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -253,4 +258,56 @@ footer {
 footer p {
   text-align: center;
   color: var(--color-primary);
+}
+
+/* PROJECT PAGE */
+.back-link {
+  color: var(--color-primary);
+  padding-left: var(--spacing-m);
+}
+
+.back-link a {
+  color: var(--color-primary);
+}
+
+.back-link a:hover {
+  color: var(--color-secondary);
+}
+
+.project-video {
+  width: 100%;
+}
+
+.project-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+}
+
+.project-title {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.project-name {
+  margin-top: var(--spacing-s);
+  margin-bottom: 0;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.project-category {
+  color: var(--color-secondary);
+  text-align: center;
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-m);
+}
+
+.project-description {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
 }
