@@ -43,3 +43,30 @@
   width: 4rem;
   color: var(--color-primary);
 }
+
+/* MEDIA QUERIES */
+
+/* TABLET / LAPTOP */
+@media screen and (min-width: 769px) {
+  :root {
+  --navbar-height: 9rem;
+  }
+
+  #navbar .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    padding: 0 12vw;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  /* MORE RULES */
+}
