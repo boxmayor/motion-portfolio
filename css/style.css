@@ -174,7 +174,7 @@ main {
 .reel-container h2 {
   text-align: center;
   margin: var(--spacing-m) 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .reel-container iframe {
@@ -183,15 +183,15 @@ main {
 }
 
 #reel .scroll-guide {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 #reel .scroll-guide a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 #reel .scroll-guide a:hover {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 
