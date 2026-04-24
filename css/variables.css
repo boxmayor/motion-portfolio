@@ -23,3 +23,13 @@
   /* Navbar */
   --navbar-height: 10rem;
 }
+
+/* MEDIA QUERIES */
+
+/* TABLET / LAPTOP */
+
+@screen and (min-width: 769px) {
+  
+}
+
+/* DESKTOP */
