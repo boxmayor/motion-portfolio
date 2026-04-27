@@ -82,6 +82,11 @@ main {
   width: 3rem;
   height: auto;
   margin: 0 auto;
+  opacity: 0.4;
+}
+
+.welcome-text, .reel-container {
+  padding-bottom: var(--spacing-xxl);
 }
 
 
@@ -310,12 +315,36 @@ footer p {
     font-size: 3rem;
   }
 
+  .font-portfolio-tile {
+    font-size: 2rem;
+  }
+
+  .featured .font-portfolio-tile {
+    font-size: 3rem;
+  }
+
   /* WELCOME SECTION */
 
   /* REEL SECTION */
   .reel-container {
     width: 50%;
     max-width: 600px;
+  }
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-grid .featured {
+    grid-column: span 2;
   }
 }
 
@@ -325,6 +354,11 @@ footer p {
 
   /* REEL SECTION */
   .reel-container {
-    max-width: 700px;
+    max-width: 600px;
+  }
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    max-width: 600px;
   }
 }
