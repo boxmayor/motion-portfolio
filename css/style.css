@@ -55,6 +55,14 @@
   font-size: 2.25rem;
 }
 
+.font-scribble-project-title {
+  font-family: var(--scribble-font);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+}
+
 /* RULES FOR GENERAL ELEMENTS */
 * {
   box-sizing: border-box;
@@ -95,7 +103,7 @@ main {
   scroll-margin-top: var(--navbar-height);
   height: calc(100vh - var(--navbar-height));
   width: 70%;
-  max-width: 600px;
+  max-width: 400px;
   padding: var(--spacing-xl) 0;
   margin: 0 auto;
   display: flex;
@@ -251,8 +259,8 @@ footer p {
 
 /* PROJECT PAGE */
 .back-link {
+  margin-left: var(--spacing-m);
   color: var(--color-primary);
-  padding-left: var(--spacing-m);
 }
 
 .back-link a {
@@ -265,6 +273,7 @@ footer p {
 
 .project-video {
   width: 100%;
+  margin: 0 auto;
 }
 
 .project-video iframe {
@@ -273,9 +282,9 @@ footer p {
   margin: 0;
 }
 
-.project-title {
-  width: 70%;
-  max-width: 300px;
+.project-title, .project-description {
+  width: 80%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -294,9 +303,6 @@ footer p {
 }
 
 .project-description {
-  width: 70%;
-  max-width: 300px;
-  margin: 0 auto;
   color: var(--color-primary);
   margin-bottom: var(--spacing-xl);
 }
@@ -315,6 +321,10 @@ footer p {
     font-size: 3rem;
   }
 
+  .font-scribble-project-title {
+    font-size: 4rem;
+  }
+
   .font-portfolio-tile {
     font-size: 2rem;
   }
@@ -324,6 +334,10 @@ footer p {
   }
 
   /* WELCOME SECTION */
+
+  #welcome {
+    max-width: 600px;
+  }
 
   /* REEL SECTION */
   .reel-container {
@@ -346,7 +360,20 @@ footer p {
   .portfolio-grid .featured {
     grid-column: span 2;
   }
+
+  /* PROJECT PAGE */
+
+  .back-link {
+    margin-left: 0;
+  }
+
+  .project-video, .project-title, .project-description {
+    width: 70%;
+    max-width: 600px;
+  }
 }
+
+
 
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
@@ -360,5 +387,12 @@ footer p {
   /* PORTFOLIO SECTION */
   #portfolio {
     max-width: 600px;
+  }
+
+    /* PROJECT PAGE */
+
+  .project-video, .project-title, .project-description {
+    width: 70%;
+    max-width: 800px;
   }
 }
