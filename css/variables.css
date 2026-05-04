@@ -26,6 +26,13 @@
 
 /* MEDIA QUERIES */
 
-/* TABLET / LAPTOP */
-
-/* DESKTOP */
+/* LIGHT MODE COLORS */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #2D3315;
+   --color-secondary: #315F1C;
+   --color-bg-primary: #DEC7EB;
+   --color-bg-secondary: #F2B0E0;
+   --color-overlay-bg: #DEC7EB99;
+  }
+}

@@ -126,6 +126,10 @@ main {
   padding-bottom: var(--spacing-xxl);
 }
 
+a:hover {
+  transition: color 0.35s ease-in;
+}
+
 
 /* WELCOME SECTION */
 #welcome {
@@ -231,6 +235,7 @@ main {
 
 #portfolio h2 {
   color: var(--color-primary);
+  margin: var(--spacing-m) 0;
   text-align: center;
 }
 
@@ -266,7 +271,7 @@ main {
 
 .overlay h3 {
   text-align: center;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .portfolio-tile img {
