@@ -63,6 +63,34 @@
   font-size: 3rem;
 }
 
+/* ANIMATIONS */
+
+@keyframes point-down {
+  0% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(0%);
+  }
+
+  38% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  75% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 /* RULES FOR GENERAL ELEMENTS */
 * {
   box-sizing: border-box;
@@ -91,6 +119,7 @@ main {
   height: auto;
   margin: 0 auto;
   opacity: 0.4;
+  animation: 3s cubic-bezier(.6,0,.4,1) 0s infinite point-down;
 }
 
 .welcome-text, .reel-container {
