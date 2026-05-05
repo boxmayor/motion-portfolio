@@ -40,9 +40,19 @@
   color: var(--color-primary);
 }
 
+#navbar .logo-container {
+  display: flex;
+}
+
 #navbar .logo {
   width: 4rem;
   color: var(--color-primary);
+  transition: 0.15s ease-in transform;
+}
+
+#navbar .logo:hover {
+  transform-origin: center;
+  transform: rotate(6deg);
 }
 
 /* MEDIA QUERIES */
@@ -53,11 +63,11 @@
   --navbar-height: 9rem;
   }
 
-  #navbar .logo {
+  #navbar .logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    translate: -50% -50%;
   }
 
   .nav-links {
