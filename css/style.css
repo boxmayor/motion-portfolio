@@ -96,9 +96,10 @@
   box-sizing: border-box;
 }
 
-*:focus {
+:is(a, button, [tabindex]):focus-visible {
   outline: 2px solid var(--color-secondary);
   border-radius: 3px;
+  outline-offset: 2px;
 }
 
 html {
@@ -126,15 +127,15 @@ main {
   padding-bottom: var(--spacing-xxl);
 }
 
-a:hover {
-  transition: color 0.35s ease-in;
+a {
+  transition: color 0.25s ease-in;
 }
 
 
 /* WELCOME SECTION */
 #welcome {
   scroll-margin-top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100dvh - var(--navbar-height));
   width: 70%;
   max-width: 400px;
   padding: var(--spacing-xl) 0;
@@ -186,7 +187,7 @@ a:hover {
 
 #reel {
   scroll-margin-top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100dvh - var(--navbar-height));
   background: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
@@ -294,14 +295,11 @@ footer p {
 /* PROJECT PAGE */
 .back-link {
   margin-left: var(--spacing-m);
+  margin-bottom: var(--spacing-s);
   color: var(--color-primary);
 }
 
-.back-link a {
-  color: var(--color-primary);
-}
-
-.back-link a:hover {
+.back-link:hover {
   color: var(--color-secondary);
 }
 
@@ -399,6 +397,7 @@ footer p {
 
   .back-link {
     margin-left: 0;
+    margin-bottom: var(--spacing-s);
   }
 
   .project-video, .project-title, .project-description {
@@ -406,7 +405,6 @@ footer p {
     max-width: 600px;
   }
 }
-
 
 
 /* DESKTOP */
@@ -428,5 +426,17 @@ footer p {
   .project-video, .project-title, .project-description {
     width: 70%;
     max-width: 800px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-guide {
+    animation: none;
   }
 }
