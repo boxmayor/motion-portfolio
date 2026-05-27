@@ -1,5 +1,5 @@
 /* FONTS */
-.font-body {
+body {
   font-family: var(--body-font);
   font-optical-sizing: auto;
   font-weight: 400;
@@ -7,59 +7,31 @@
   font-size: 1rem;
 }
 
-.font-portfolio-tile {
-  font-family: var(--scribble-font);
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 3.5rem;
-}
-
-.font-navbar {
-  font-family: var(--body-font);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+#navbar {
   font-size: 1.5rem;
 }
 
-.font-footer {
-  font-family: var(--body-font);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-}
-
-.font-scribble {
+h2 {
   font-family: var(--scribble-font);
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
-.font-scribble-h1 {
-  font-family: var(--scribble-font);
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 4rem;
-}
-
-.font-scribble-h2 {
-  font-family: var(--scribble-font);
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
   font-size: 2.25rem;
 }
 
-.font-scribble-project-title {
+.welcome-text h1 {
   font-family: var(--scribble-font);
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
+  font-size: 4rem;
+}
+
+.overlay h3 {
+  font-family: var(--scribble-font);
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.project-title h1 {
+  font-family: var(--scribble-font);
+  font-weight: 800;
   font-size: 3rem;
 }
 
@@ -346,23 +318,23 @@ footer p {
 
 @media screen and (min-width: 769px) {
   /* FONTS */
-  .font-scribble-h1 {
+  .welcome-text h1 {
     font-size: 6rem;
   }
 
-  .font-scribble-h2 {
+  h2 {
     font-size: 3rem;
   }
 
-  .font-scribble-project-title {
+  .project-title h1 {
     font-size: 4rem;
   }
 
-  .font-portfolio-tile {
+  .overlay h3 {
     font-size: 2rem;
   }
 
-  .featured .font-portfolio-tile {
+  .featured .overlay h3 {
     font-size: 3rem;
   }
 
