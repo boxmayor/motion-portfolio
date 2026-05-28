@@ -203,7 +203,7 @@ a {
 #portfolio {
   scroll-margin-top: var(--navbar-height);
   width: 100%;
-  padding: var(--spacing-xl) 0;
+  padding-bottom: var(--spacing-xl);
 }
 
 #portfolio h2 {
