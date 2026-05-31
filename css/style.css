@@ -233,6 +233,7 @@ a {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  padding: var(--spacing-s);
   background: var(--color-overlay-bg);
   opacity: 0;
   pointer-events: none;
