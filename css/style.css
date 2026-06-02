@@ -313,6 +313,15 @@ footer p {
   margin-bottom: var(--spacing-xl);
 }
 
+.project-description a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: var(--color-primary);
+}
+
 /* MEDIA QUERIES */
 
 /* TABLET / LAPTOP */
