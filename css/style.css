@@ -356,6 +356,7 @@ footer p {
 .img-box img {
   display: block;
   width: 80%;
+  max-width: 400px;
   max-height: 60dvh;
   margin: 0 auto;
   object-fit: contain;
@@ -426,7 +427,7 @@ footer p {
     margin-bottom: var(--spacing-s);
   }
 
-  .project-video, .project-title, .project-description {
+  .project-video, .project-title, .project-description, .img-box img {
     width: 70%;
     max-width: 600px;
   }
@@ -453,7 +454,7 @@ footer p {
 
     /* PROJECT PAGE */
 
-  .project-video, .project-title, .project-description {
+  .project-video, .project-title, .project-description, .img-box img {
     width: 70%;
     max-width: 800px;
   }
