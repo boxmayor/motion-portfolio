@@ -322,7 +322,14 @@ footer p {
 
 .project-description {
   color: var(--color-primary);
+}
+
+.project-description:last-of-type {
   margin-bottom: var(--spacing-xl);
+}
+
+.project-description:has(+ .img-box) {
+  margin-bottom: 0;
 }
 
 .project-description a {
@@ -332,6 +339,30 @@ footer p {
 
 .project-description a:hover {
   color: var(--color-primary);
+}
+
+.img-box {
+  width: 100vw;
+  background: var(--color-bg-secondary);
+  padding: var(--spacing-m) 0;
+  margin: var(--spacing-l) 0;
+  transition: background 0.3s linear;
+}
+
+.img-box:hover {
+  background: var(--color-img-box-hover);
+}
+
+.img-box img {
+  display: block;
+  width: 80%;
+  max-height: 60dvh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.img-box:last-child {
+  margin-bottom: var(--spacing-xl);
 }
 
 /* MEDIA QUERIES */
