@@ -103,6 +103,10 @@ a {
   transition: color 0.25s ease-in;
 }
 
+iframe {
+  border: none;
+}
+
 
 /* WELCOME SECTION */
 #welcome {
