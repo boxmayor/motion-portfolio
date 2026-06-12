@@ -370,6 +370,17 @@ footer p {
   margin-bottom: var(--spacing-xl);
 }
 
+.hero, .hero img {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.hero, .hero:hover {
+  background: none;
+}
+
 /* MEDIA QUERIES */
 
 /* TABLET / LAPTOP */
