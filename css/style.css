@@ -20,7 +20,7 @@ h2 {
 .welcome-text h1 {
   font-family: var(--scribble-font);
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .overlay h3 {
