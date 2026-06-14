@@ -300,7 +300,8 @@ footer p {
 }
 
 .dual-player video {
-  max-width: 50%;
+  flex: 1;
+  min-width: 0;
 }
 
 .project-title, .project-description {
@@ -369,6 +370,8 @@ footer p {
   margin-bottom: var(--spacing-xl);
 }
 
+/* HERO IMG FOR PROJECT SUBPAGE, CURRENTLY NOT ACTIVE
+
 .hero, .hero img {
   width: 100%;
   max-width: none;
@@ -379,6 +382,8 @@ footer p {
 .hero, .hero:hover {
   background: none;
 }
+
+ */
 
 /* MEDIA QUERIES */
 
